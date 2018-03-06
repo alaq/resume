@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Adrien Lacquemant
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://alaq.io/}{\Large Adrien Lacquemant}} & Email : \href{mailto:adrien@alaq.io}{adrien@alaq.io}\\
+  \href{https://alaq.io}{https://alaq.io} & Mobile : +1 (646) 410-3409 \\
+\end{tabular*}
+
+%--------SUMMARY------------
+\section{Summary}
+Summary summary.
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Proficient}{: React/Redux, JavaScript, Node.js, Express, PostgreSQL, HTML/CSS, Test Driven Development}
+   }
+   \item{
+     \textbf{Knowledgable}{: Git, Deployment, Agile Methodology, Firebase, Serverless architecture, SQL}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stops iOS app}{}
+      {An iOS app that notifies you when you've reached your transit stop}{Jan 2018}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Built with React-Native}
+        \resumeItem{Apache Beam}
+          {Works in the background}
+        \resumeItem{Apache Beam}
+          {Uses geofencing and sends a push notification to the user}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {summaries.io}{}
+      {A personal daily news summary, in text and audio podcast}{stuff}
+      {Progressive web application built with Javascript using Node.js and React.}
+      {Supporting deployments of Node.js microservices using Google Firebase hosted on Google Cloud.}
+      {Utilizing Google Cloud Firestore, Cloud Functions, and basic metrics through Crashlytics.}
+      {Agile development methodology adopted by team utitlizing Trello, Slack, and Github as well as utilizing Travis for CI/CD.}
+      {Leveraging TensorFlow for ML summary creation and text-to-speech synthesis featuring IBM Watson.}
+
+    \resumeSubheading
+      {jsFlow}{New York, NY}
+      {A versatile list-based note-taking web app, extensible with JavaScript}{Nov 2017}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Winner of the “Mad Science” award for being “most purely and absurdly excellent”}
+          \resumeItem{Apache Beam}
+          {Built using vanilla React.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Device Extract}{New York, NY}
+      {An Electron app for cataloging mobile devices programmatically}{Jul 2013 - Jul 2014}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Built with Electron, accessing Android and iOS devices through the machine's serial ports In collaboration with Ara Global Group, as a separate entity}
+          \resumeItem{Apache Beam}
+          {Currently used in production by several clients}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Employment}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Academy of Code}{New York, NY}
+      {Teaching Fellow}{Dec 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Led code reviews and acted as a project manager for 4 teams of junior software engineers.}
+        \resumeItem{Apache Beam}
+          {Taught algorithms, whiteboarding problems, back-end and front-end development in JavaScript.}
+        \resumeItem{Apache Beam}
+          {Code paired, debugged and mentored technical concepts and best practices to 50 students on a daily basis.}
+        \resumeItem{Apache Beam}
+          {Led technical interviews in Javascript for prospective students 2 to 3 times a week}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Ara Global Group}{New York, NY}
+      {CTO}{Oct 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Sole developer of company's enterprise resource planning software}
+        \resumeItem{Apache Beam}
+          {Business development and sales in the European market}
+        \resumeItem{Apache Beam}
+          {Strategic planning of the company's relocation to Miami, FL and continued company growth}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BISAM, Inc.}{New York, NY}
+      {Product Support Analyst}{Jan 2015 - Apr 2016}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Troubleshot financial calculation issues raised by clients and Professional Services team}
+          \resumeItem{Apache Beam}
+          {Solved complex business and technical issues, using calculations, financial formulas.}
+          \resumeItem{Apache Beam}
+          {Supported defect resolution by identifying and replicating bugs then testing patch releases and managing deliveries.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tortus Capital Management, LLC}{New York, NY}
+      {Research Analyst}{Jul 2013 - Jul 2014}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {Financial analysis and modeling}
+          \resumeItem{Apache Beam}
+          {Recommended position sizing according to upside/downside risk and conviction levels}
+          \resumeItem{Apache Beam}
+          {Traded and monitored the firm’s securities on a daily basis and helped in risk management}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UBS Wealth Management}{Paris, France}
+      {Sales Trader}{Jan 2012 - Jun 2012}
+
+    \resumeSubheading
+      {Credit Suisse}{Paris, France}
+      {Investment Consultant}{Jun 2011 - Dec 2011}
+
+  \resumeSubHeadingListEnd
+
+  %-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Fullstack Academy of Code}{New York, NY}
+    {Software Engineering Immersive Program}{2017}
+  \resumeSubheading
+    {ESSEC Business School}{Singapore}
+    {M.S. Financial Techniques}{2013}
+  \resumeSubheading
+    {Université Paris Dauphine}{Paris, France}
+    {M.S. Finance 2011 B.S. Economics}{2010}
+\resumeSubHeadingListEnd
+
+\begin{center}
+  Adrien Lacquemant -- +1 (646) 410-3409 -- adrien@alaq.io
+\end{center}
+%-------------------------------------------
+\end{document}
