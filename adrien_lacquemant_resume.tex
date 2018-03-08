@@ -19,7 +19,10 @@
 
   \pagestyle{fancy}
   \fancyhf{} % clear all header and footer fields
-  \fancyfoot{}
+  \fancyfoot[C]{------------------------------------ \\ \small +1 (646) 410-3409}
+	\fancyfoot[L]{\hfill \\ \small Adrien Lacquemant}
+	\fancyfoot[R]{\hfill \\ \small adrien@alaq.io}
+    \fancyfootoffset[R]{0pt}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}
 
@@ -28,7 +31,7 @@
   \addtolength{\evensidemargin}{-0.5in}
   \addtolength{\textwidth}{1in}
   \addtolength{\topmargin}{-.7in}
-  \addtolength{\textheight}{1.0in}
+  \addtolength{\textheight}{1.2in}
 
   \urlstyle{same}
 
@@ -79,8 +82,8 @@
 
   %----------HEADING-----------------
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\href{http://alaq.io/}{\Large Adrien Lacquemant}} & Email: \href{mailto:adrien@alaq.io}{adrien@alaq.io}\\
-    \href{https://alaq.io}{https://alaq.io} & Mobile: +1 (646) 410-3409 \\
+    \textbf{\href{http://alaq.io/}{\Large Adrien Lacquemant}} & \href{mailto:adrien@alaq.io}{adrien@alaq.io}\\
+    \href{https://alaq.io}{alaq.io} -- \href{https://github.com/alaq}{github.com/alaq} -- \href{https://www.linkedin.com/in/adrien-lacquemant/}{linkedin.com/in/adrien-lacquemant/} & +1 (646) 410-3409 \\
   \end{tabular*}
 
   %--------SUMMARY------------
@@ -91,55 +94,19 @@
   \section{Skills}
    \resumeSubHeadingListStart
      \item{
-       \textbf{Proficient}{: React/Redux, JavaScript, Node.js, Express, PostgreSQL, HTML/CSS, Test Driven Development}\vspace{-5pt}
+       \textbf{Proficient}{: JavaScript, React/Redux, React-Native, Node.js, PostgreSQL, HTML/CSS}\vspace{-5pt}
      }
      \item{
-       \textbf{Knowledgable}{: Git, TypeScript, Agile Methodology, Firebase, Serverless architecture, SQL}\vspace{-5pt}
+       \textbf{Knowledgable}{: Git, TypeScript, Agile, Firebase, Serverless, SQL, unit testing with Mocha/Chai/Enzyme, \LaTeX}\vspace{-5pt}
      }
    \resumeSubHeadingListEnd
 
-  %-----------PROJECTS-----------------
-  \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Propel ML -- Open Source Contributor}{\href{https://github.com/propelml/propel}{https://github.com/propelml/propel}}
-      {GPU-backed numpy-like infrastructure for scientific computing in JavaScript.}{Feb 2018 to Present}
-      \resumeItemListStart
-        \resumeItemSimple{Contributions to the front-end of a large Preact/Typescript open source project, using TDD.}
-        \resumeItemSimple{Implemented profiles for users.}
-        \resumeItemListEnd
-
-      \resumeSubheading
-        {Stops iOS app -- Sole Developer}{\href{https://github.com/alaq/stops}{https://github.com/alaq/stops}}
-        {A React-Native app that works in the background and notifies the user when entering a geofence.}{Jan 2018}
-        \resumeItemListStart
-        \resumeItemSimple{Implemented background geofencing triggering push notifications.}
-        \resumeItemListEnd
-
-    \resumeSubheading
-      {\href{https://summaries.io}{summaries.io} -- Developer}{\href{https://github.com/npm-install/summaries.io}{https://github.com/npm-install/summaries.io}}
-      {A personal daily news summary, in text and audio podcast}{Dec 2017}
-      \resumeItemListStart
-        \resumeItemSimple{Progressive web application built by a Test-First Agile team with Javascript using Node.js and React.}
-        \resumeItemSimple{Fully serverless deployments of Node.js microservices using Google Cloud Functions and Firestore.}
-        \resumeItemListEnd
-
-    \resumeSubheading
-      {Device Extract -- Founder \& Developer}{}
-      {An Electron app for cataloging mobile devices programmatically}{June 2017 - Present}
-      \resumeItemListStart
-        \resumeItemSimple{Built with Electron, accessing Android and iOS devices through the machine's serial ports.}
-        \resumeItemSimple{Scanned over 100,000 mobile devices successfully; extracting characteristics and basic diagnostics.}
-        \resumeItemListEnd
-
-        \resumeSubHeadingListEnd
-
-  %-----------EXPERIENCE-----------------
+     %-----------EXPERIENCE-----------------
   \section{Experience}
     \resumeSubHeadingListStart
       \resumeSubheading
-        {Fullstack Academy of Code}{New York, NY}
-        {Teaching Fellow}{Dec 2017 - Present}
+        {Fullstack Academy of Code \normalfont\textit{-- major coding bootcamp}}{New York, NY}
+        {Teaching Fellow}{Dec 2017 - Apr 2018}
         \resumeItemListStart
           \resumeItemSimple{Led code reviews and acted as a project manager for 4 teams of junior software engineers.}
           \resumeItemSimple{Taught algorithms, whiteboarding problems, back-end and front-end development in JavaScript.}
@@ -148,8 +115,8 @@
         \resumeItemListEnd
 
       \resumeSubheading
-        {Ara Global Group \normalfont\textit{-- electronics wholesaler}}{New York, NY}
-        {CTO}{Oct 2016 - Present}
+        {Ara Global Group \normalfont\textit{-- medium sized electronics wholesaler}}{New York, NY}
+        {CTO}{Oct 2016 - Apr 2018}
         \resumeItemListStart
         	\resumeItemSimple{Lead re-engineering project to improve and automate asset processing and  cataloging that reduced processing time by 25\%.}
           \resumeItemSimple{Developed an in-house SaaS for systematic asset and sales monitoring per device which lead to 20\% in increased revenue.}
@@ -157,7 +124,7 @@
         \resumeItemListEnd
 
       \resumeSubheading
-        {BISAM, Inc.}{New York, NY}
+        {BISAM, Inc. \normalfont\textit{-- financial software vendor}}{New York, NY}
         {Product Support Analyst}{Jan 2015 - Apr 2016}
         \resumeItemListStart
           \resumeItemSimple{Troubleshot financial calculation issues raised by clients and Professional Services team.}
@@ -169,7 +136,7 @@
         {Tortus Capital Management \normalfont\textit{-- value oriented hedge fund}}{New York, NY}
         {Research Analyst}{Jul 2013 - Jul 2014}
         \resumeItemListStart
-          \resumeItemSimple{Conducted over 30 financial analysis of distressed companies and recommended long/short position.}
+          \resumeItemSimple{Conducted over 30 financial analysis of distressed companies and recommended long/short positions.}
           \resumeItemSimple{Traded and monitored the firm’s securities on a daily basis and helped in risk management.}
         \resumeItemListEnd
 
@@ -182,6 +149,42 @@
 %         {Investment Consultant}{Jun 2011 - Dec 2011}
 
     \resumeSubHeadingListEnd
+
+  %-----------PROJECTS-----------------
+  \section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Propel ML \normalfont\textit{-- open source contributor}}{\href{https://github.com/propelml/propel}{https://github.com/propelml/propel}}
+      {GPU-backed numpy-like infrastructure for scientific computing in JavaScript.}{Feb 2018 to Present}
+      \resumeItemListStart
+        \resumeItemSimple{Contributions to the front-end of a large Preact/Typescript open source project, using TDD.}
+        \resumeItemSimple{Implemented profiles for users.}
+        \resumeItemListEnd
+
+%       \resumeSubheading
+%         {Stops iOS app -- Sole Developer}{\href{https://github.com/alaq/stops}{https://github.com/alaq/stops}}
+%         {A React-Native app that works in the background and notifies the user when entering a geofence.}{Jan 2018}
+%         \resumeItemListStart
+%         \resumeItemSimple{Implemented background geofencing triggering push notifications.}
+%         \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://summaries.io}{summaries.io} \normalfont\textit{-- developer}}{\href{https://github.com/npm-install/summaries.io}{https://github.com/npm-install/summaries.io}}
+      {A personal daily news summary, in text and audio podcast}{Dec 2017}
+      \resumeItemListStart
+        \resumeItemSimple{Progressive web application built by a Test-First Agile team with Javascript using Node.js and React.}
+        \resumeItemSimple{Fully serverless deployments of Node.js microservices using Google Cloud Functions and Firestore.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Device Extract, LLC. \normalfont\textit{-- founder \& developer}}{}
+      {An Electron app for cataloging mobile devices programmatically}{June 2017 - Present}
+      \resumeItemListStart
+        \resumeItemSimple{Built with Electron, accessing Android and iOS devices through the computer's serial ports.}
+        \resumeItemSimple{Scanned over 100,000 mobile devices successfully; extracting characteristics and basic diagnostics.}
+        \resumeItemListEnd
+
+        \resumeSubHeadingListEnd
 
     %-----------EDUCATION-----------------
   \section{Education}
@@ -196,7 +199,6 @@
       {Université Paris Dauphine}{Paris, France}
       {M.S. Finance \& B.S. Economics}{2011}
   \resumeSubHeadingListEnd
-
 
 %   \begin{center}
 %     \centerline{-----------------------}
