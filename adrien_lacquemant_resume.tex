@@ -21,7 +21,7 @@
   \fancyhf{} % clear all header and footer fields
   \fancyfoot[C]{------------------------------------ \\ \small +1 (646) 410-3409}
 	\fancyfoot[L]{\hfill \\ \small Adrien Lacquemant}
-	\fancyfoot[R]{\hfill \\ \small adrien@alaq.io}
+	\fancyfoot[R]{\hfill \\ \small \email{}}
     \fancyfootoffset[R]{0pt}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}
@@ -76,6 +76,7 @@
   \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
   \newcommand{\engineerType}{Software Engineer}
+  \newcommand{\email}{adrien@lacquemant.com}
 
   %-------------------------------------------
   %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,23 +85,20 @@
 
   %----------HEADING-----------------
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\href{http://alaq.io/}{\Large Adrien Lacquemant}} & \href{mailto:adrien@alaq.io}{adrien@alaq.io}\\
+    \textbf{\href{http://alaq.io/}{\Large Adrien Lacquemant}} & \href{mailto:\email{}}{\email{}}\\
     \href{https://alaq.io}{alaq.io} -- \href{https://github.com/alaq}{github.com/alaq} -- \href{https://www.linkedin.com/in/adrien-lacquemant/}{linkedin.com/in/adrien-lacquemant/} & +1 (646) 410-3409 \\
   \end{tabular*}
 
   %--------SUMMARY------------
-%   \section{Summary}
-%   Two years of experience as Software Engineer delivering creative highly data-driven client-centric applications. I am excited to be part of a team and solve problems using my experience in creating fullstack applications.
-
   \section{Summary}
-  Two years of experience as a \engineerType{} delivering creative highly data-driven client-centric applications. I am excited to be part of a team and solve problems using my experience in spotting inefficiencies and creating automated solutions.
+  Four years of experience as a \engineerType{} delivering creative highly data-driven client-centric applications. I am excited to be part of a team and solve problems using my experience in in large system architecture development.
 
 
   %--------PROGRAMMING SKILLS------------
   \section{Skills}
    \resumeSubHeadingListStart
      \item{
-       \textbf{Languages}{: JavaScript/TypeScript, C++, Common Lisp}\vspace{-5pt}
+       \textbf{Languages}{: JavaScript/TypeScript, C++, Clojure}\vspace{-5pt}
      }
      \item{
        \textbf{Proficient}{: React/Redux, Node.js, Unit testing with Mocha/Chai/Sinon, SQL}\vspace{-5pt}
@@ -113,14 +111,15 @@
 
       \resumeSubheading
         {Bloomberg L.P.}{New York, NY}
-        {Senior Software Engineer}{May 2018 - Current}
+        {Senior Software Engineer - Trading \& Analytics}{May 2018 - Current}
         \resumeItemListStart
-          \resumeItemSimple{Overhaul of legacy trading applications, resulting in increased usability and uniformization of the trading experience.}
-		  \resumeItemSimple{Design and build new features for the company's trading platforms and release them to our users.}
-          \resumeItemSimple{Spearhead the adoption of new technologies and improvement of development practices (type-checking, React, state-management).}
+          \resumeItemSimple{Design, build and release new features to Bloomberg's full stack trading platform framework, while maintaining system stability.}
+          \resumeItemSimple{Lead cross-functional team projects and deliver them successfully.}
+          \resumeItemSimple{Drive the adoption of new technologies and improvement of development practices (TypeScript, React, state-management).}
+          \resumeItemSimple{Mentor others and encourage knowledge sharing in order to drive the growth of the team.}
         \resumeItemListEnd
 
-\resumeSubheading
+      \resumeSubheading
         {Fullstack Academy of Code \normalfont\textit{-- major coding bootcamp}}{New York, NY}
         {Teaching Fellow}{Dec 2017 - Apr 2018}
         \resumeItemListStart
@@ -166,49 +165,53 @@
 %         {Credit Suisse}{Paris, France}
 %         {Investment Consultant}{Jun 2011 - Dec 2011}
 
-      \resumeSubheading
-        {Freelance Web Developer}{Paris \& New York, NY}
-        {Self Employed}{2007 - 2017}
-        \resumeItemListStart
-          \resumeItemSimple{Built from scratch over 30 websites for small and medium sized companies, using HTML, CSS, JavaScript.}
-          \resumeItemSimple{Recent examples include: \href{https://icyclegreen.com}{icyclegreen.com}, \href{https://araglobalgroup.com}{araglobalgroup.com}, \href{http://adht.parsons.edu/GeraldineStutz}{adht.parsons.edu/GeraldineStutz}}
-        \resumeItemListEnd
+    %   \resumeSubheading
+    %     {Freelance Web Developer}{Paris \& New York, NY}
+    %     {Self Employed}{2007 - 2017}
+    %     \resumeItemListStart
+    %       \resumeItemSimple{Built from scratch over 30 websites for small and medium sized companies, using HTML, CSS, JavaScript.}
+    %       \resumeItemSimple{Recent examples include: \href{https://icyclegreen.com}{icyclegreen.com}, \href{https://araglobalgroup.com}{araglobalgroup.com}, \href{http://adht.parsons.edu/GeraldineStutz}{adht.parsons.edu/GeraldineStutz}}
+    %     \resumeItemListEnd
 
     \resumeSubHeadingListEnd
+    {Previous employers: UBS, Credit Suisse, France Télévisions Publicité}
 
   %-----------PROJECTS-----------------
   \section{Projects}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {RoamSync \normalfont\textit{-- founder}}{\href{https://github.com/propelml/propel}{https://roamsync.com}}
+      {A syncing service between a note taking application (Roam Research) and Google Calendar}{}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
+    %     \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
+    %     \resumeItemListEnd
+
+    \resumeSubheading
+      {Athens \normalfont\textit{-- open source contributor}}{\href{https://github.com/athensresearch/athens}{https://github.com/athensresearch/athens}}
+      {A knowledge graph for research and notetaking, written in Clojure(script).}{}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
+    %     \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
+    %     \resumeItemSimple{Learned Clojure in public, through Athens' learning program, posted daily updates as well as summaries on Twitter. \href{https://github.com/alaq/learning-clojure-in-public}{https://github.com/alaq/learning-clojure-in-public}}
+    %     \resumeItemListEnd
+
     \resumeSubheading
       {Propel ML \normalfont\textit{-- open source contributor}}{\href{https://github.com/propelml/propel}{https://github.com/propelml/propel}}
-      {GPU-backed numpy-like infrastructure for scientific computing in JavaScript.}{Feb 2018 to April 2018}
-      \resumeItemListStart
-        \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
-        \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
-        \resumeItemListEnd
-
-%       \resumeSubheading
-%         {Stops iOS app \normalfont\textit{-- sole developer}}{\href{https://github.com/alaq/stops}{https://github.com/alaq/stops}}
-%         {A React-Native app that works in the background and notifies the user when entering a geofence.}{Jan 2018}
-%         \resumeItemListStart
-%         \resumeItemSimple{Implemented background geofencing triggering push notifications.}
-%         \resumeItemListEnd
-
-%     \resumeSubheading
-%       {\href{https://summaries.io}{summaries.io} \normalfont\textit{-- developer}}{\href{https://github.com/npm-install/summaries.io}{https://github.com/npm-install/summaries.io}}
-%       {A personal daily news summary, in text and audio podcast}{Dec 2017}
-%       \resumeItemListStart
-%         \resumeItemSimple{Progressive web application built by a Test-First Agile team with Javascript using Node.js and React.}
-%         \resumeItemSimple{Fully serverless deployments of Node.js microservices using Google Cloud Functions and Firestore.}
-%         \resumeItemListEnd
+      {GPU-backed numpy-like infrastructure for scientific computing in JavaScript.}{}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
+    %     \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
+    %     \resumeItemListEnd
 
     \resumeSubheading
       {Device Extract, LLC. \normalfont\textit{-- founder \& developer}}{}
-      {An Electron app for cataloging mobile devices programmatically}{June 2017 - April 2018}
-      \resumeItemListStart
-        \resumeItemSimple{Built with Electron, to access Android and iOS devices through the computer's serial ports.}
-        \resumeItemSimple{Scanned over 100,000 mobile devices successfully; extracting characteristics and basic diagnostics.}
-        \resumeItemListEnd
+      {An Electron app for cataloging mobile devices programmatically}{June 2017 to April 2018}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Built with Electron, to access Android and iOS devices through the computer's serial ports.}
+    %     \resumeItemSimple{Scanned over 100,000 mobile devices successfully; extracting characteristics and basic diagnostics.}
+    %     \resumeItemListEnd
 
         \resumeSubHeadingListEnd
 
