@@ -1,0 +1,28 @@
+name: pdf-resume-export
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        env:
+            LATEX: pdflatex -shell-escape
+            BIBTEX: bibtex
+        steps:
+            - uses: actions/checkout@v1
+            - name: Install texlive
+              run: |
+                  sudo apt-get install texlive-publishers \
+                                       texlive-latex-recommended \
+                                       texlive-latex-extra \
+                                       texlive-fonts-recommended \
+                                       texlive-fonts-extra
+            - name: Build paper
+              run: |
+                  ${LATEX} *.tex
+            - name: Push paper
+              run: |
+                  git checkout --orphan ${GITHUB_REF##*/}-pdf
+                  git add -f *.pdf
+                  git -c user.name='Adrien Lacquemant' -c user.email='github@alaq.io' commit -m "Update pdf"
+                  git push -q -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} ${GITHUB_REF##*/}-pdf

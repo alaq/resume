@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Adrien Lacquemant
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+  \usepackage{latexsym}
+  \usepackage[empty]{fullpage}
+  \usepackage{titlesec}
+  \usepackage{marvosym}
+  \usepackage[usenames,dvipsnames]{color}
+  \usepackage{verbatim}
+  \usepackage{enumitem}
+  \usepackage[pdftex]{hyperref}
+
+  % Adjust margins
+  \addtolength{\oddsidemargin}{-0.5in}
+  \addtolength{\evensidemargin}{-0.5in}
+  \addtolength{\textwidth}{1in}
+  \addtolength{\topmargin}{-.7in}
+  \addtolength{\textheight}{1.2in}
+
+  \urlstyle{same}
+
+  \raggedbottom
+  \raggedright
+  \setlength{\tabcolsep}{0in}
+
+  % Sections formatting
+  \titleformat{\section}{
+    \vspace{-5pt}\scshape\raggedright\large
+  }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+  %-------------------------
+  % Custom commands
+  \newcommand{\resumeItem}[2]{
+    \item\small{
+      \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+  }
+
+  \newcommand{\resumeItemSimple}[1]{
+    \item\small{
+      {#1}{\vspace{-2pt}}
+    }
+  }
+
+  \newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+      \end{tabular*}\vspace{-5pt}
+  }
+
+  \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+  \renewcommand{\labelitemii}{$\circ$}
+
+  \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeItemListStart}{\begin{itemize}}
+  \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+  \newcommand{\engineerType}{Software Engineer}
+  \newcommand{\email}{adrien@alaq.io}
+
+  %-------------------------------------------
+  %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{document}
+
+  %----------HEADING-----------------
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{http://alaq.io/}{\Large Adrien Lacquemant}} & \href{mailto:\email{}}{\email{}}\\
+    \href{https://alaq.io}{alaq.io} -- \href{https://github.com/alaq}{github.com/alaq} -- \href{https://www.linkedin.com/in/adrien-lacquemant/}{linkedin.com/in/adrien-lacquemant/} & +1 (646) 410-3409 \\
+  \end{tabular*}
+
+  %--------SUMMARY------------
+  \section{Summary}
+  Senior \engineerType{} delivering creative highly data-driven client-centric applications. I am excited to be part of a team and solve problems using my experience in large system architecture development.
+
+
+  %--------PROGRAMMING SKILLS------------
+  \section{Skills}
+   \resumeSubHeadingListStart
+     \item{
+       \textbf{Languages}{: proficient in JavaScript/TypeScript, experience in python, C++, Clojure}\vspace{-5pt}
+     }
+     \item{
+       \textbf{Proficient}{: React, Next.js, Node.js, Unit testing with Mocha/Chai/Sinon, SQL}\vspace{-5pt}
+     }
+   \resumeSubHeadingListEnd
+
+     %-----------EXPERIENCE-----------------
+  \section{Experience}
+    \resumeSubHeadingListStart
+
+      \resumeSubheading
+        {Bloomberg L.P.}{New York, NY}
+        {Senior Software Engineer - Trading \& Analytics}{May 2018 - Current}
+        \resumeItemListStart
+          \resumeItemSimple{Design, build and release new features to Bloomberg's full stack trading platform framework, while maintaining system stability.}
+          \resumeItemSimple{Lead cross-functional team projects and deliver them successfully.}
+          \resumeItemSimple{Drive the adoption of new technologies and improvement of development practices (TypeScript, React, state-management).}
+          \resumeItemSimple{Mentor others and encourage knowledge sharing in order to drive the growth of the team.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Fullstack Academy of Code \normalfont\textit{-- major coding bootcamp}}{New York, NY}
+        {Teaching Fellow}{Dec 2017 - Apr 2018}
+        \resumeItemListStart
+          \resumeItemSimple{Led code reviews and acted as a project manager for 4 teams of junior software engineers.}
+%           \resumeItemSimple{Taught algorithms, whiteboarding problems, back-end and front-end development in JavaScript.}
+          \resumeItemSimple{Code paired, debugged/mentored technical concepts and best practices to 50 students on a daily basis.}
+          \resumeItemSimple{Led technical interviews in Javascript for prospective students 2 to 3 times a week.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Ara Global Group \normalfont\textit{-- medium sized electronics wholesaler}}{New York, NY}
+        {\engineerType{}}{May 2016 - Apr 2018}
+        \resumeItemListStart
+        	\resumeItemSimple{Spearheaded re-engineering project to improve/automate asset processing and  cataloging, reducing processing time by 25\%.}
+          \resumeItemSimple{Developed an in-house SaaS for systematic asset and sales monitoring per device leading to 20\% in increased revenue.}
+          \resumeItemSimple{Wrote a data validation tool in JavaScript that ensured the accuracy of inventory and sales data feeds.}
+%           \resumeItemSimple{Launched new Miami branch, recruiting, training and managing a team of 20 employees within 8 weeks.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {BISAM, Inc. \normalfont\textit{-- financial software vendor}}{New York, NY}
+        {Product Support Analyst}{Jan 2015 - Apr 2016}
+        \resumeItemListStart
+          \resumeItemSimple{Troubleshot financial calculation issues raised by clients and Professional Services team.}
+%           \resumeItemSimple{Solved complex business and technical issues, using financial formulas.}
+          \resumeItemSimple{Supported defect resolution by identifying and replicating bugs.}
+          \resumeItemSimple{Testing patch releases and managing deliveries.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Tortus Capital Management \normalfont\textit{-- value oriented hedge fund}}{New York, NY}
+        {Research and Trading Analyst}{Jul 2013 - Jul 2014}
+        \resumeItemListStart
+          \resumeItemSimple{Completed financial analysis for over 30 distressed companies and recommended long/short positions.}
+          \resumeItemSimple{Traded and monitored the firm's securities on a daily basis.}
+        \resumeItemListEnd
+
+%       \resumeSubheading
+%         {UBS Wealth Management}{Paris, France}
+%         {Sales Trader}{Jan 2012 - Jun 2012}
+
+%       \resumeSubheading
+%         {Credit Suisse}{Paris, France}
+%         {Investment Consultant}{Jun 2011 - Dec 2011}
+
+    %   \resumeSubheading
+    %     {Freelance Web Developer}{Paris \& New York, NY}
+    %     {Self Employed}{2007 - 2017}
+    %     \resumeItemListStart
+    %       \resumeItemSimple{Built from scratch over 30 websites for small and medium sized companies, using HTML, CSS, JavaScript.}
+    %       \resumeItemSimple{Recent examples include: \href{https://icyclegreen.com}{icyclegreen.com}, \href{https://araglobalgroup.com}{araglobalgroup.com}, \href{http://adht.parsons.edu/GeraldineStutz}{adht.parsons.edu/GeraldineStutz}}
+    %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    {Previous employers: UBS, Credit Suisse, France Télévisions Publicité}
+
+  %-----------PROJECTS-----------------
+  \section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {RoamSync \normalfont\textit{-- founder \& developer}}{\href{https://roamsync.vercel.app}{https://roamsync.vercel.app}}
+      {A syncing service between a note taking application (Roam Research) and Google Calendar.}{}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
+    %     \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
+    %     \resumeItemListEnd
+
+    \resumeSubheading
+      {Athens \normalfont\textit{-- open source contributor}}{\href{https://github.com/athensresearch/athens}{https://github.com/athensresearch/athens}}
+      {A knowledge graph for research and notetaking, written in Clojure(script).}{}
+    \resumeSubheading
+      {Learning Clojure in public \normalfont\textit{-- author}}{\href{https://github.com/alaq/learning-clojure-in-public}{https://github.com/alaq/learning-clojure-in-public}}
+      {Learned Clojure in 5 weeks and wrote one blog post per day.}{July 2020}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
+    %     \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
+    %     \resumeItemSimple{Learned Clojure in public, through Athens' learning program, posted daily updates as well as summaries on Twitter. \href{https://github.com/alaq/learning-clojure-in-public}{https://github.com/alaq/learning-clojure-in-public}}
+    %     \resumeItemListEnd
+
+    \resumeSubheading
+      {Propel ML \normalfont\textit{-- open source contributor}}{\href{https://github.com/propelml/propel}{https://github.com/propelml/propel}}
+      {GPU-backed numpy-like infrastructure for scientific computing in JavaScript.}{}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Contributing to the front-end of a large Preact/Typescript open source project, using TDD.}
+    %     \resumeItemSimple{Implementing of user profiles, and several other front-end features.}
+    %     \resumeItemListEnd
+
+    \resumeSubheading
+      {Device Extract, LLC. \normalfont\textit{-- founder \& developer}}{}
+      {An Electron app for cataloging mobile devices programmatically.}{June 2017 to April 2018}
+    %   \resumeItemListStart
+    %     \resumeItemSimple{Built with Electron, to access Android and iOS devices through the computer's serial ports.}
+    %     \resumeItemSimple{Scanned over 100,000 mobile devices successfully; extracting characteristics and basic diagnostics.}
+    %     \resumeItemListEnd
+
+        \resumeSubHeadingListEnd
+
+    %-----------EDUCATION-----------------
+  \section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Academy of Code}{New York, NY}
+      {Software Engineering Immersive Program}{2017}
+    \resumeSubheading
+      {ESSEC Business School}{Singapore}
+      {M.S. Financial Engineering}{2013}
+    \resumeSubheading
+      {Université Paris Dauphine}{Paris, France}
+      {M.S. Finance \& B.S. Management}{2011}
+  \resumeSubHeadingListEnd
+
+  %-------------------------------------------
+  \end{document}
