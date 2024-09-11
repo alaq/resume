@@ -4,11 +4,10 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,10pt,usenames,dvipsnames]{article}
 
 % Packages
-\usepackage{latexsym, fullpage, titlesec, marvosym, verbatim, enumitem, hyperref}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage{latexsym, fullpage, titlesec, marvosym, verbatim, enumitem, hyperref, background, color}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.25in}
@@ -59,7 +58,21 @@
 
 \newcommand{\engineerType}{Software Engineer}
 \newcommand{\email}{adrien@alaq.io}
-\newcommand{\address}{Brooklyn, NY 11206}
+\newcommand{\address}{Brooklyn, NY 11222}
+
+% Add these lines before \begin{document}
+\newcommand{\watermarkContent}{CONFIDENTIAL}
+\newif\ifshowwatermark
+\showwatermarkfalse % Set to \showwatermarktrue or \showwatermarkfalse to show or hide watermark and notice
+
+% Modify the \backgroundsetup command
+\backgroundsetup{
+  scale=5,
+  color=black!10,
+  angle=45,
+  opacity=0.05,
+  contents={\ifshowwatermark\watermarkContent\fi}
+}
 
 % CV STARTS HERE
 \begin{document}
@@ -189,5 +202,11 @@ Software Engineering | Project Management | Team Leadership | Continuous Improve
     {Fullstack Academy of Code}{New York, NY}
     {Software Engineering Immersive Program}{2017}
 \resumeSubHeadingListEnd
+
+% At the end of the document, before \end{document}
+\ifshowwatermark
+\section{Confidentiality Notice}
+This document is marked as \watermarkContent{} and should be treated accordingly.
+\fi
 
 \end{document}
